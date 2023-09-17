@@ -27,7 +27,7 @@
   &__links {
     display: flex;
     list-style: none;
-    gap: 2.1rem;
+
 
     a {
       font-size: $p-size;
@@ -90,7 +90,7 @@
   }
 }
 
-//  mobule nav
+//  mobile nav
 
 .mobile-hamb {
   font-size: 2.8rem;
@@ -132,7 +132,7 @@
     &:hover {
       color: $text-orange;
     }
-  }
+  }   
 
   &__links {
     display: flex;

@@ -1,0 +1,16 @@
+.register_heading{
+    color: orangered;
+    margin:  auto 45%;
+    text-decoration: underline;
+    align-items: center;
+    justify-content: center;
+}
+
+.register_para{
+    margin:  auto 43%;
+    width: 100%;
+}
+
+.register_text{
+    font-size: 20px;
+}

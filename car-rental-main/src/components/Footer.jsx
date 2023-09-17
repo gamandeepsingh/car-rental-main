@@ -29,7 +29,7 @@ function Footer() {
               </li>
 
               <li  style={{ fontSize: "14px" }}>
-                  Design by Team-BAAAG
+                  Design by Team- MernWallah
                 
               </li>
             </ul>

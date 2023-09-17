@@ -12,7 +12,6 @@ function Home() {
       <Navbar />
       <Hero />
       <BookCar />
-      <PlanTrip />
       <PickCar />
       <Banner />
       <Footer />
