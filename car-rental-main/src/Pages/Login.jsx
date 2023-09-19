@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import axios from 'axios'
 import "./Login.css"
 import 'bootstrap/dist/js/bootstrap.bundle.js';
@@ -27,7 +27,7 @@ export default function Login(){
     <div>
       <div className="d-flex justify-content-center align-items-center bg-secondary vh-100">
       <div className="bg-white p-3 rounded-5 w-50 login_forum">
-          <h2 className='login_heading'>Register</h2>
+          <h2 className='login_heading'>Login</h2>
           <form onSubmit={handlesubmit}>
           <div className="mb-3">
             <label className='login_text' htmlFor="email">
@@ -58,6 +58,12 @@ export default function Login(){
           <button type="sumbit" className="btn w-100 rounded-5">
             Login
           </button>
+          <p>or</p>
+          <Link to="/register" className='text-decoration-none ' >
+          <button type="sumbit" className="btn w-100 rounded-5 mt-2">
+            New User?
+          </button>
+          </Link>
           </form>
       </div>
     </div>

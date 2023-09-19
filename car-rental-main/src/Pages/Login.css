@@ -7,7 +7,6 @@ sup{
 .login_heading{
     color: orangered;
     margin:  auto 45%;
-    text-decoration: underline;
     align-items: center;
     justify-content: center;
 }
@@ -15,7 +14,15 @@ sup{
     font-size: 20px;
     
 }
-
+.login_input{
+    height:30px ;
+}
+.login_input::-webkit-input-placeholder{
+    font-size: 16px;
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+}
 .btn {
     display: block;
     width: 100%;

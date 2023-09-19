@@ -1,7 +1,6 @@
 .register_heading{
     color: orangered;
     margin:  auto 45%;
-    text-decoration: underline;
     align-items: center;
     justify-content: center;
 }
@@ -13,4 +12,13 @@
 
 .register_text{
     font-size: 20px;
+}
+
+.register_input{
+    height: 25px;
+}
+
+.register_input::placeholder{
+    font-size: 16px;
+    padding: 2%;
 }
