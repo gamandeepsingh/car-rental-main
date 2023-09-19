@@ -4,6 +4,10 @@ sup{
 .login_forum{
   width: 100%;
 }
+.login_input{
+  height: 35px;
+}
+
 .login_heading{
     color: orangered;
     margin:  auto 45%;
