@@ -35,7 +35,7 @@ export default function Signup() {
              placeholder="Enter name"
              autoComplete="off"
              name="email"
-             className="form-control rounded-5"
+             className="form-control rounded-5 register_input"
              onChange={(e)=> setName(e.target.value)}
             /> 
           </div>
@@ -49,7 +49,7 @@ export default function Signup() {
              placeholder="Enter Email"
              autoComplete="off"
              name="email"
-             className="form-control rounded-5"
+             className="form-control rounded-5 register_input"
              onChange={(e)=> setEmail(e.target.value)}
             /> 
           </div>
@@ -62,7 +62,7 @@ export default function Signup() {
              placeholder="Enter Password"
              autoComplete="off"
              name="password"
-             className="form-control rounded-5"
+             className="form-control rounded-5 register_input"
              onChange={(e)=> setPassword(e.target.value)}
             /> 
           </div>
@@ -70,9 +70,8 @@ export default function Signup() {
             Register
           </button>
           </form>
-          <p className="register_para">Already Have a Account</p>
-          <Link to="/logged" className="btn btn-default border w-100 bg-light rounded-5 text-decoration-none">
-            Login
+          <Link to="/logged" className="btn btn-default border w-100 bg-light rounded-5 text-decoration-none mt-2">
+          Already Have a Account?
           </Link>
       </div>
     </div>
