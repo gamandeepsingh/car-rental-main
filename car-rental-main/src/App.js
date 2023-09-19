@@ -13,7 +13,6 @@ import HomeUser from "./Pages/HomeUser";
 function App() {
   return (
     <>
-      
       <Routes>
         <Route index path="/" element={<Home />} />
         <Route path="about" element={<About />} />
@@ -24,7 +23,6 @@ function App() {
         <Route path="register" element={<Signup />} />
         <Route path="login" element={<Login />} />
         <Route path="logged" element={<HomeUser />} />
-        
       </Routes>
     </>
   );

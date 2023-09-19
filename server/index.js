@@ -9,6 +9,9 @@ app.use(cors())
 
 mongoose.connect("mongodb://127.0.0.1:27017/uturn")
 
+// app.get('/login',(req,res)=>{
+//     res.render('../com')
+// })
 app.post('/login',(req,res)=>{
     const {email,password}=req.body;
     UturnModel.findOne({email:email})
