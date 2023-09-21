@@ -28,11 +28,21 @@ app.post('/login',(req,res)=>{
     })
 })
 
-app.post('/register',(req,res)=>{
-    UturnModel.create(req.body)
-    .then(employees => res.json(employees))
-    .catch(err=> console.log(err))
-})
+
+app.post('/register', (req, res) => {
+    UturnModel.findOne({ email: req.body.email })      
+       .then(existingUser =>{
+                if (existingUser) {                
+                    res.status(400).json({ error: "Email already registered" });            
+                }
+                else {
+            UturnModel.create(req.body)
+                    .then(newUser => res.json(newUser))                    
+                    .catch(err => console.error(err));
+                }})
+        .catch(err => console.error(err));
+});
+
 
 app.listen(3001,()=>{
     console.log("running")
